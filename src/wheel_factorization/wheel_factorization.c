@@ -21,7 +21,7 @@ static __inline __forceinline unsigned int FIND_FIRST_SET_BIT(unsigned __int64 m
 
 #define WHEEL_STEP(x) \
 	if (!(n%f)){ \
-		uint32_t c=0; \
+		c=0; \
 		do{ \
 			c++; \
 			n/=f; \
@@ -75,7 +75,7 @@ uint32_t wheel_factorization(uint64_t n,factor_t* o,uint32_t ol){
 		}
 	}
 	if (!(n%3)){
-		uint32_t c=0;
+		c=0;
 		do{
 			c++;
 			n/=3;
@@ -88,7 +88,7 @@ uint32_t wheel_factorization(uint64_t n,factor_t* o,uint32_t ol){
 		}
 	}
 	if (!(n%5)){
-		uint32_t c=0;
+		c=0;
 		do{
 			c++;
 			n/=5;
